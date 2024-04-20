@@ -41,6 +41,12 @@ public class CuentasServiceImpl implements CuentasService {
     		cuenta.setSaldo(cuenta.getSaldo()+cantidad);
 		em.merge(cuenta);
 	}
+	@Override
+	public void extraaer(int numeroCuenta, double cantidad) {
+		Cuenta cuenta=em.find(Cuenta.class, numeroCuenta);
+		cuenta.setSaldo(cuenta.getSaldo()-cantidad);
+	em.merge(cuenta);		
+	}
 	
 
 }
