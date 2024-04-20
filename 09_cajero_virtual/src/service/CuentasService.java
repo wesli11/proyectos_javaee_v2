@@ -11,4 +11,5 @@ public interface CuentasService {
 	void extraaer(int numeroCuenta, double cantidad);
 	//ticket para miembro2 del quipo
 	void enviarNotificaciones();
+	void metodoChampu();
 }

@@ -51,6 +51,11 @@ public class CuentasServiceImpl implements CuentasService {
 	public void enviarNotificaciones() {
       System.out.println("Notificaciones");		
 	}
+	@Override
+	public void metodoChampu() {
+		// TODO Auto-generated method stub
+		
+	}
 	
 
 }
