@@ -47,6 +47,10 @@ public class CuentasServiceImpl implements CuentasService {
 		cuenta.setSaldo(cuenta.getSaldo()-cantidad);
 	em.merge(cuenta);		
 	}
+	@Override
+	public void enviarNotificaciones() {
+      System.out.println("Notificaciones");		
+	}
 	
 
 }
