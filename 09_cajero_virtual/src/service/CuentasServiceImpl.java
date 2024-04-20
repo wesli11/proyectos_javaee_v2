@@ -35,12 +35,12 @@ public class CuentasServiceImpl implements CuentasService {
 		em.merge(cliente);
 
 	}
-//	@Override
-//	public void ingresar(int numeroCuenta, double cantidad) {
-//		Cuenta cuenta=em.find(Cuenta.class, numeroCuenta);
-//		cuenta.setSaldo(cuenta.getSaldo()+cantidad);
-//		em.merge(cuenta);
-//	}
+ 	  @Override
+	  public void ingresar(int numeroCuenta, double cantidad) {
+		Cuenta cuenta=em.find(Cuenta.class, numeroCuenta);
+    		cuenta.setSaldo(cuenta.getSaldo()+cantidad);
+		em.merge(cuenta);
+	}
 	
 
 }
